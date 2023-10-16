@@ -1,0 +1,21 @@
+.card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Membuat jarak antara form-group supaya lebih lega */
+.form-group.row {
+    margin-bottom: 15px;
+}
+
+/* Jika Anda ingin membuat input file lebih menarik */
+input[type="file"] {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 10px;
+}
+
+/* Jarak antara tombol submit dan cancel */
+.btn-primary {
+    margin-right: 10px;
+}

@@ -1,0 +1,46 @@
+/* Mengatur gaya umum untuk .blog-post */
+.blog-post {
+    width: 85%; 
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Kita tumpuk konten secara vertikal */
+}
+
+.blog-post:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur gambar dalam artikel */
+.blog-post img {
+    width: 100%; 
+    max-height: 180px; /* Menambahkan batasan maksimum tinggi gambar */
+    height: auto; 
+    object-fit: cover; 
+    /* border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;  */
+}
+
+/* Khusus untuk .blog-post di sebelah kiri */
+.blog-post.show-up img {
+    width: 100%;
+    max-width: 100%; /* memastikan gambar tidak melebihi lebar parentnya */
+    object-fit: cover;
+}
+
+/* Khusus untuk .blog-post di sebelah kanan */
+.col-lg-6.wow .blog-post {
+    height: auto; /* Membuat tinggi mengikuti kontennya */
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 992px) {
+    .blog-post {
+        flex-direction: column;
+    }
+    .blog-post img {
+        max-height: none; /* Menghapus batasan tinggi gambar pada tampilan mobile */
+    }
+}
